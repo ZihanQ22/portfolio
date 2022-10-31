@@ -1,31 +1,46 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+main {
+  max-width: 80rem;
+  margin: 0 auto;
 }
 
-.hero{
-    width: 100vw;
-    height: 100vw;
-    display: flex;
-    padding: 1rem;
-    /*flex-direction: column;*/
-    justify-content: center;
-    align-items: center;
-    color: transparent;
-    background-image: url("/assets/images/home-bg.jpg");
-    background-clip: text;
-
+.thumbnail-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-h1{
-    font-size: calc(2rem + 4vw);
+.gallery-item {
+  position: relative;
+  overflow: hidden;
 }
-h2{
-    font-size: calc(1rem + 2vw);
-}
-body{
-    background-size: cover;
-    background-size: cover;
 
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: hsla(0, 0%, 0%, .5);
+  opacity: 0;
+
+  font-size: clamp(1.25rem, 2vw, 2rem);
+  font-weight: 600;
+  color: var(--clr-secondary);
+
+  display: grid;
+  place-items: center;
+  transition: opacity .5s;
+  z-index: 1;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  transition: transform .5s;
+  position: relative;
+  z-index: 0;
 }
