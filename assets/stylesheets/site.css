@@ -5,11 +5,13 @@
   --ff-primary: Inter, sans-serif;
   --ff-titles: Forum, serif;
   --ff-titles-2: Cairo, sans-serif;
-  --clr-bg:
-  --clr-primary: hsl(0, 0%, 2%);
-  --clr-secondary: hsl(0, 0%, 80%);
-  --clr-accent: hsl(353, 60%, 60%);
 
+  --clr-bg: #eeeeee; 
+  --clr-primary: #dcdcdc;
+  --clr-secondary: #21209c;
+  --clr-accent: hsl(353, 60%, 60%);
+  --clr-green: #d8eacf; 
+  
   --fs-xl: clamp(2rem, 16vw, 5rem);
   --fs-l: clamp(1.75rem, 14vw, 4rem);
   --fs-m: clamp(1.125rem, 8vw, 1.5rem);
