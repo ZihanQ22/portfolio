@@ -1,59 +1,54 @@
 *{
   margin: 0;
   padding: 0; 
+  box-sizing: border-box;
 }
 
-body{
-  background-color: 
+#wrapper {
+  display: flex; /* or inline-flex */
+  flex-direction: row;
 }
 
-h1{
-  text-align: center;
-  margin: 2rem 0;
-}
-
-
-
-.thumbnail-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 5em;
-}
-
-.gallery-item {
-  position: relative;
-  overflow: hidden;
-
-}
-
-.gallery-item:hover .overlay {
-  opacity: 1;
-}
-
-.gallery-item:hover img {
-  transform: scale(1.1);
-}
-
-.gallery-item .overlay {
-  position: absolute;
-  inset: 0; 
-  background-color: hsla(0, 0%, 0%, .5);
-  opacity: 0;
-
-  font-size: clamp(1.25rem, 2vw, 2rem);
-  font-weight: 600;
-  color: var(--clr-secondary);
-
-  display: grid;
-  place-items: center;
-  transition: opacity .5s;
-  z-index: 1;
-}
-
-.gallery-item img {
+/* Add the header at the left of the video/page */
+#header-container {
+  position: fixed;
+  z-index: 2;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(0,0,0,0.25);
   width: 100%;
-  display: block;
-  transition: transform .5s;
-  position: relative;
-  z-index: 0;
+  max-width: 10rem;
+  height: 100vh;
+  padding: 23px;
 }
+
+h3{
+  font-size: var(--fs-m);
+}
+
+.header-item {
+  place-items: center;
+  height: 10rem;
+  width: 150px;
+  height: 50px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size: var(--fs-m);
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+
+#myVideo {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
