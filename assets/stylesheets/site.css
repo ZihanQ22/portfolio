@@ -1,14 +1,17 @@
 /* * {margin: 0; padding: 0; box-sizing: border-box;}
 
 /* Sitewide fonts and colors */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap'); 
 :root {
-  --ff-primary: Inter, sans-serif;
-  --ff-titles: Forum, serif;
-  --ff-titles-2: Cairo, sans-serif;
-
+  --ff-primary: 'Nunito Sans', sans-serif;
+  --ff-titles: 'Unbounded', cursive;
+  --ff-titles-2: ;
   --clr-bg: #eeeeee; 
   --clr-primary: #dcdcdc;
-  --clr-secondary: #21209c;
+  --clr-secondary: #0066cc;
   --clr-accent: hsl(353, 60%, 60%);
   --clr-green: #d8eacf; 
   
@@ -20,10 +23,6 @@
 }
 
 
-
-
-
-/* 
 body {
   min-height: 100vh;
   display: flex;
@@ -43,4 +42,4 @@ main {
 
 h1, h2, h3, h4, h5, h6 {
   
-} */
+}
