@@ -1,19 +1,21 @@
 * {margin: auto 0; padding: 0; box-sizing: border-box;}
 
 body {
-  background-color: var(--clr-bg);
+  background-color: var(--clr-primary);
   font-family: var(--ff-primary);
   font-size: var(--fs-m);
 }
 
-div{
-    background-color: var(--clr-primary);
+#content{
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
 }
-div > * {
-  flex: 1 1 40%;
+
+#header-main{
+    display: flex;
+    flex-direction: column;
+
 }
 
 h1{
@@ -25,10 +27,7 @@ h1{
 img{
   margin: 6rem 0;
   display: flex;
-  width:60vw;
-  align-content: center;
+  width: 60vw;
+ /* align-content: center;*/
 }
 
-#header-container{
-  background-color: var(--clr-secondary);
-}

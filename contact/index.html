@@ -6,15 +6,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="/assets/lib/jquery-3.6.1.min.js"></script>
   <script src="/assets/scripts/import.js"></script>
+
+  <link rel="stylesheet" href="/contact/style.css">
+  <link rel="stylesheet" href="/assets/stylesheets/site.css">
   <title>Contact</title>
 </head>
 <body>
   <div id="wrapper">
     <div id="header-container"></div>
     <!-- Add your code below this line -->
-    
+    <div id="name">
+      <div><a href="index.html">Zihan Qiu</a></div>
+    </div>
+    <header>
+      <nav id="main-nav">
+          <div class="header-item"><a href="/works/pages-1/videos/index.html">videos</a></div>
+          <div class="header-item"><a href="/works/pages-1/installation/index.html">installation</a></div> 
+          <div class="header-item"><a href="/works/pages-1/photography/index.html">photography</a></div> 
+          <div class="header-item"><a href="/bio/index.html">about</a></div>
+          <div class="header-item"><a class="header-item" href="/contact/index.html">contact</a></div>
+      </nav>
+    </header>
     <main>
-      <h1>Contact</h1>
+      <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
     </main>
   </div>
 </body>
