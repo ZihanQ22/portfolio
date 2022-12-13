@@ -13,12 +13,18 @@ h1{
 }
 
 img{
-  margin: 6rem 0;
+  margin: 1rem 0;
   display: flex;
   width:60vw;
   align-content: center;
 }
 
-#header-container{
-  background-color: var(--clr-secondary);
+.content{
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 150px; 
+}
+
+#main-nav{
+  background-image: url(/assets/imagesfromfilms/background-image.png);
 }

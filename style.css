@@ -23,15 +23,11 @@
   padding: 23px;
 }
 
-h3{
-  font-size: var(--fs-m);
-}
-
-.header-item {
+.mainpage-item {
   place-items: center;
-  height: 10rem;
   width: 150px;
   height: 50px;
+  font-family: 'Roboto Mono', monospace;
 }
 
 a{

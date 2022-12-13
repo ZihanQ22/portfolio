@@ -6,28 +6,17 @@ body {
   font-size: var(--fs-m);
 }
 
-#content{
-    display: flex;
+.content{
     align-items: flex-start;
     flex-wrap: wrap;
+    margin-top: 150px; 
 }
 
-#header-main{
-    display: flex;
-    flex-direction: column;
-
-}
-
-h1{
-  position: fixed;
-  font-family: var(--ff-titles);
-  text-transform: uppercase;
+#main-nav{
+  background-image: url(/assets/imagesfromfilms/background-image.png);
 }
 
 img{
-  margin: 6rem 0;
-  display: flex;
-  width: 60vw;
- /* align-content: center;*/
+  margin: 1rem 0; 
 }
 

@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 :root {
   --ff-primary: 'Nunito Sans', sans-serif;
   --ff-titles: 'Unbounded', cursive;
@@ -16,8 +18,8 @@
   --clr-green: #d8eacf; 
   
   --fs-xl: clamp(2rem, 16vw, 5rem);
-  --fs-l: clamp(1.75rem, 10vw, 2rem);
-  --fs-m: clamp(1.125rem, 8vw, 1.5rem);
+  --fs-l: clamp(1.5rem, 10vw, 2rem);
+  --fs-m: clamp(1.125rem, 6vw, 1.3rem);
   --fs-s: clamp(1rem, 8vw, 2rem);
   --fs-xs: clamp(.8rem, 4vw, 1rem);
 }
@@ -35,9 +37,15 @@ body {
 }
 
 main {
-  margin: 4rem auto;
+  margin: 5rem auto;
   max-width: 60rem;
   padding: 0 1em;
+}
+
+#header-main{
+  display: flex; 
+  flex-flow: row wrap;
+  font-family: 'Roboto Mono', monospace;
 }
 
 #main-nav{
@@ -49,24 +57,49 @@ main {
   display: flex; 
   flex-flow: column wrap;
   align-content: flex-end;
-  background-color: rgba(0,0,0,0.25);
+  background-color: rgba(0,0,0,0.2);
   padding: 23px;
+  font-family: 'Roboto Mono', monospace;
 }
+
+.current-page {
+  border-right: 3px solid black;
+}
+
 #main-nav a{
+  border: block; 
   text-decoration: none;
   color: black;
   font-size: var(--fs-m);
 }
+
+.header-item {
+  border-right: 3px solid rgba(0,0,0,0);
+  margin-right: 5px; 
+  font-size: var(--fs-m)
+}
+
+.header-item:hover{
+  border-right: 3px solid black;
+  box-sizing: border-box;
+}
+
 #name a{
-  font-family: var(--ff-titles);
   text-decoration: none;
+  position: fixed; 
   color: black;
   font-size: var(--fs-l);
-  position: fixed;
-  font-family: var(--ff-titles);
-  text-transform: uppercase;
+  font-family: 'Roboto Mono', monospace;
+  margin-left: 8px; 
+  z-index: 2;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  
+  font-family: 'Roboto Mono', monospace;
+}
+
+img{
+  margin: 1rem 0;
+  width: 60vw;
+  min-width: 400px;
 }
